@@ -1,4 +1,4 @@
-module ref
+module github.com/tada-team/ref
 
 go 1.15
 
