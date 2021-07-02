@@ -7,10 +7,10 @@ import (
 	jsoniter "github.com/json-iterator/go"
 )
 
-func Now() *time.Time { return Time(time.Now()) }
-
-func Time(v time.Time) *time.Time { return &v }
-func String(v string) *string     { return &v }
+func Now() *time.Time              { return Time(time.Now()) }
+func Time(v time.Time) *time.Time  { return &v }
+func String(v string) *string      { return &v }
+func Strings(v []string) *[]string { return &v }
 
 func Int(v int) *int       { return &v }
 func Int8(v int8) *int8    { return &v }
